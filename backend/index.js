@@ -8,7 +8,7 @@ const cookieParser = require('cookie-parser')
 const app =express()
 app.use(cors(
     {
-        origin :https://frotented.vercel.app,
+        origin :process.env.FRONTEND_URL,
         credentials :true
     }
 ))
